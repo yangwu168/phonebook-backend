@@ -12,6 +12,7 @@ const app = express();
 //   next();
 // };
 app.use(cors());
+app.use(express.static('dist'));
 app.use(express.json());
 // app.use(requestLogger);
 morgan.token('req-body', function (req, res) {
