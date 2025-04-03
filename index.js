@@ -1,6 +1,5 @@
 const express = require('express');
 const morgan = require('morgan');
-const cors = require('cors');
 
 const app = express();
 
@@ -11,7 +10,6 @@ const app = express();
 //   console.log('---');
 //   next();
 // };
-app.use(cors());
 app.use(express.static('dist'));
 app.use(express.json());
 // app.use(requestLogger);
